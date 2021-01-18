@@ -4,7 +4,7 @@ SELECT c.name as name,
  WHERE c.cid = f.carrier_id
  GROUP by c.cid;
 
--- Output result: 12 rows
+-- Output result: 22 rows
 -- American Airlines Inc.|1849386
 -- Alaska Airlines Inc.|285111
 -- JetBlue Airways|435562
