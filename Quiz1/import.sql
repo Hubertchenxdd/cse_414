@@ -1,0 +1,43 @@
+INSERT INTO Books VALUES (1, "TITLE_A", "AUTHOR_A", "GENRE_A", "PUBLISHER_A");
+INSERT INTO Books VALUES (2, "TITLE_B", "AUTHOR_B", "GENRE_B", "PUBLISHER_B");
+INSERT INTO Books VALUES (3, "TITLE_C", "AUTHOR_C", "GENRE_C", "PUBLISHER_C");
+INSERT INTO Books VALUES (4, "TITLE_D", "AUTHOR_D", "GENRE_B", "PUBLISHER_D");
+INSERT INTO Books VALUES (5, "TITLE_E", "AUTHOR_E", "GENRE_D", "PUBLISHER_E");
+INSERT INTO Books VALUES (6, "TITLE_F", "AUTHOR_F", "GENRE_C", "PUBLISHER_F");
+INSERT INTO Books VALUES (7, "TITLE_G", "AUTHOR_G", "GENRE_E", "PUBLISHER_G");
+
+INSERT INTO Members VALUES (11, "USER_A");
+INSERT INTO Members VALUES (12, "USER_A");
+INSERT INTO Members VALUES (13, "USER_C");
+INSERT INTO Members VALUES (14, "USER_D");
+INSERT INTO Members VALUES (15, "USER_E");
+INSERT INTO Members VALUES (16, "USER_F");
+
+INSERT INTO Lending VALUES (1, 11, date('2011-10-05'), date('2011-10-06'));
+INSERT INTO Lending VALUES (1, 11, date('2011-10-06'), date('2011-10-07'));
+INSERT INTO Lending VALUES (1, 11, date('2011-10-07'), date('2011-10-08'));
+INSERT INTO Lending VALUES (1, 11, date('2011-10-08'), NULL);
+INSERT INTO Lending VALUES (1, 12, date('2011-10-05'), date('2011-10-06'));
+INSERT INTO Lending VALUES (1, 12, date('2011-10-06'), date('2011-10-07'));
+INSERT INTO Lending VALUES (1, 12, date('2011-10-07'), date('2011-10-08'));
+INSERT INTO Lending VALUES (1, 12, date('2011-10-08'), NULL);
+INSERT INTO Lending VALUES (6, 16, date('2011-10-05'), NULL);
+INSERT INTO Lending VALUES (5, 16, date('2011-10-05'), NULL);
+
+INSERT INTO Lending VALUES (3, 14, date('2011-10-05'), date('2011-10-06'));
+INSERT INTO Lending VALUES (3, 13, date('2011-10-05'), date('2011-10-06'));
+INSERT INTO Lending VALUES (3, 13, date('2011-10-06'), NULL);
+
+INSERT INTO Lending VALUES (4, 11, date('2011-10-05'), date('2011-10-06'));
+INSERT INTO Lending VALUES (4, 11, date('2011-10-06'), date('2011-10-06'));
+INSERT INTO Lending VALUES (4, 16, date('2011-10-05'), date('2011-10-06'));
+INSERT INTO Lending VALUES (1, 16, date('2011-10-05'), date('2011-10-06'));
+INSERT INTO Lending VALUES (4, 15, date('2011-10-05'), date('2011-10-06'));
+
+-- INSERT INTO Lending VALUES (1, 11, date('2011-10-05'), date('2011-10-06'));
+-- INSERT INTO Lending VALUES (1, 11, date('2011-10-05'), date('2011-10-06'));
+-- INSERT INTO Lending VALUES (1, 11, date('2011-10-05'), date('2011-10-06'));
+-- INSERT INTO Lending VALUES (1, 11, date('2011-10-05'), date('2011-10-06'));
+-- INSERT INTO Lending VALUES (1, 11, date('2011-10-05'), date('2011-10-06'));
+-- INSERT INTO Lending VALUES (1, 11, date('2011-10-05'), date('2011-10-06'));
+-- INSERT INTO Lending VALUES (1, 11, date('2011-10-05'), date('2011-10-06'));
