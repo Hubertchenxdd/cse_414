@@ -1,0 +1,34 @@
+(a) R(A,B,C,D,E)
+
+Step 1: Since we have D --> B, we know that {D}+ = {D, B} and R is not in BCNF. Therefore, decompose R into R1 and R2.
+R1 = A, C, E, D
+R2 = D, B
+
+Step 2: Since we have CE --> A, we know that {C, E}+ = {C, E, A} and R1 is not in BCNF. Therefore, decompose R1 into R3 and R4 and they satisfies BCNF.
+R2 = D, B
+R3 = C, E, D
+R4 = C, E, A
+
+
+(b) S(A,B,C,D,E)
+
+Step 1: Since we have A --> E, we know that {A}+ = {A, E} and S is not in BCNF. Therefore, decompose S into R1 and R2.
+R1 = A, B, C, D
+R2 = A, E
+
+Step 2: Since we have BC --> A, we know that {B, C}+ = {B, C, A} and R1 is not in BCNF. Therefore, decompose R1 into R3 and R4 and they satisfies BCNF.
+R2 = A, E
+R3 = B, C, D
+R4 = B, C, A
+
+
+(c)
+Since all subsets of {A, B, C, D} are closed, the set of functional dependencies is an empty set {}.
+
+
+(d)
+The set of functional dependencies is {A --> B, B --> C, C --> D, D --> A}. All the attributes can determine each other in this case.
+
+
+(e)
+While {BC} is closed and neither {B} nor {C} is closed, there must be B --> C as well as C --> B. And ensure all the other sets are not closed, the FDs should also include A --> BCD and D --> ABC. As a result, the set of functional dependencies is {B --> C, C --> B, A --> BCD, D --> ABC}.
